@@ -8,8 +8,7 @@ using namespace std;
 
 class ChessBoard {
 public:
-  enum class Color { WHITE,
-                     BLACK };
+  enum class Color { WHITE, BLACK };
 
   class Piece {
   public:
@@ -17,6 +16,7 @@ public:
 
     Piece(Color color) : color(color) {}
     virtual ~Piece() {}
+
 
     string color_string() const {
       if (color == Color::WHITE)
@@ -91,6 +91,8 @@ public:
 
   /// 8x8 squares occupied by 1 or 0 chess pieces
   vector<vector<unique_ptr<Piece>>> squares;
+  function<void()> after_piece_move;
+
 
   /// Move a chess piece if it is a valid move.
   /// Does not test for check or checkmate.
@@ -117,7 +119,9 @@ public:
           }
         }
         piece_to = move(piece_from);
-        printBoard();
+        if (after_piece_move) {
+          after_piece_move();
+        }
         return true;
       } else {
         cout << "can not move " << piece_from->type() << " from " << from << " to " << to << endl;
@@ -128,28 +132,33 @@ public:
       return false;
     }
   }
+};
 
-  void printBoard() {
-
-    for (int i = 0; i < 8; i++) {
-      cout << "------------------------------------------" << endl;
-      for (int j = 0; j < 8; j++) {
-        cout << "|";
-        auto &piece_from = squares[j][i];
-        if (piece_from) {
-          cout << piece_from->shortName();
-        } else {
-          cout << "    ";
+class ChessBoardPrint {
+public:
+  ChessBoardPrint(ChessBoard &board) {
+    board.after_piece_move = [&board]() {
+      for (int i = 0; i < 8; i++) {
+        cout << "------------------------------------------" << endl;
+        for (int j = 0; j < 8; j++) {
+          cout << "|";
+          auto &piece_from = board.squares[j][i];
+          if (piece_from) {
+            cout << piece_from->shortName();
+          } else {
+            cout << "    ";
+          }
         }
+        cout << "|" << endl;
       }
-      cout << "|" << endl;
-    }
-    cout << "------------------------------------------" << endl << endl;
-    }
+      cout << "------------------------------------------" << endl << endl;
+    };
+  }
 };
 
 int main() {
   ChessBoard board;
+  ChessBoardPrint print(board);
 
   board.squares[4][0] = make_unique<ChessBoard::King>(ChessBoard::Color::WHITE);
   board.squares[1][0] = make_unique<ChessBoard::Knight>(ChessBoard::Color::WHITE);
