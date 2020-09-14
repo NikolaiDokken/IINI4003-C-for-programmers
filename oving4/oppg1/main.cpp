@@ -1,5 +1,6 @@
-#include <vector>
 #include <algorithm>
+#include <iostream>
+#include <vector>
 
 using namespace std;
 
@@ -16,7 +17,7 @@ int main() {
   cout << "Første nummer: " + to_string(numbers.front()) << endl;
   cout << "Bakerste nummer: " + to_string(numbers.back()) << endl;
 
-  numbers.emplace(numbers.begin()+1, 3.33);
+  numbers.emplace(numbers.begin() + 1, 3.33);
   cout << "Førse nummer etter emplace: " + to_string(numbers.front()) << endl;
 
   auto search = find(numbers.begin(), numbers.end(), 3.7);
@@ -25,6 +26,4 @@ int main() {
   } else {
     cout << "Søket var mislykket" << endl;
   }
-
-
 }

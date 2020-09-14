@@ -1,0 +1,1 @@
+/Library/Developer/CommandLineTools/usr/bin/c++   -std=c++1y -Wall -Wextra -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX10.15.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names  CMakeFiles/oving6.dir/web_server.cpp.o  -o oving6 /usr/local/lib/libboost_system-mt.dylib 

@@ -1,0 +1,40 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/Nikolai/Documents/programmering/5semester/cpp/oving7/fraction.cpp
+fraction.hpp
+/Users/Nikolai/Documents/programmering/5semester/cpp/oving7/fraction.hpp
+cmath
+-
+iostream
+-
+sstream
+-
+string
+-
+
+/Users/Nikolai/Documents/programmering/5semester/cpp/oving7/fraction.hpp
+
+/Users/Nikolai/Documents/programmering/5semester/cpp/oving7/oppgave2.cpp
+set.hpp
+/Users/Nikolai/Documents/programmering/5semester/cpp/oving7/set.hpp
+iostream
+-
+string
+-
+
+/Users/Nikolai/Documents/programmering/5semester/cpp/oving7/set.cpp
+set.hpp
+/Users/Nikolai/Documents/programmering/5semester/cpp/oving7/set.hpp
+vector
+-
+
+/Users/Nikolai/Documents/programmering/5semester/cpp/oving7/set.hpp
+vector
+-
+

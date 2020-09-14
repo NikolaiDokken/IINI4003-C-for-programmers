@@ -1,0 +1,7 @@
+[
+{
+  "directory": "/Users/Nikolai/Documents/programmering/5semester/cpp/oving3/build",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/c++     -std=c++1y -Wall -Wextra -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX10.15.sdk   -o CMakeFiles/oving3.dir/oppgave4.cpp.o -c /Users/Nikolai/Documents/programmering/5semester/cpp/oving3/oppgave4.cpp",
+  "file": "/Users/Nikolai/Documents/programmering/5semester/cpp/oving3/oppgave4.cpp"
+}
+]

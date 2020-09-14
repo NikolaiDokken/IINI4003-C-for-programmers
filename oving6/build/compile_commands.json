@@ -1,0 +1,7 @@
+[
+{
+  "directory": "/Users/Nikolai/Documents/programmering/5semester/cpp/oving6/build",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/c++  -DBOOST_ALL_NO_LIB -DBOOST_SYSTEM_DYN_LINK -isystem /usr/local/include   -std=c++1y -Wall -Wextra -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX10.15.sdk   -o CMakeFiles/oving6.dir/web_server.cpp.o -c /Users/Nikolai/Documents/programmering/5semester/cpp/oving6/web_server.cpp",
+  "file": "/Users/Nikolai/Documents/programmering/5semester/cpp/oving6/web_server.cpp"
+}
+]
