@@ -1,3 +1,0 @@
-/Users/Nikolai/Documents/programmering/5semester/cpp/oving7/build/CMakeFiles/rebuild_cache.dir
-/Users/Nikolai/Documents/programmering/5semester/cpp/oving7/build/CMakeFiles/edit_cache.dir
-/Users/Nikolai/Documents/programmering/5semester/cpp/oving7/build/CMakeFiles/oving79.dir

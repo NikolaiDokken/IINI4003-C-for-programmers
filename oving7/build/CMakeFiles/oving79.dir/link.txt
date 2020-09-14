@@ -1,1 +1,0 @@
-/Library/Developer/CommandLineTools/usr/bin/c++   -std=c++1y -Wall -Wextra -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX10.15.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names  CMakeFiles/oving79.dir/oppgave2.cpp.o CMakeFiles/oving79.dir/fraction.cpp.o CMakeFiles/oving79.dir/set.cpp.o  -o oving79 
